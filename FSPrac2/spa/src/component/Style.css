@@ -1,0 +1,89 @@
+/* Style.css */
+
+/* General body/container styles if not already set */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5; /* Light background for the overall page */
+}
+
+#inbox-container, sent {
+  background-color: white;
+  margin: 20px auto; /* Adjust margin as needed */
+  padding: 20px;
+  border-radius: 8px; /* Slightly rounded corners for the container */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  max-width: 800px; /* Limit width for a cleaner look */
+  margin-left: auto;
+  margin-right: auto; /* Center the container */
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 600; /* Bolder than regular text */
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.table-container {
+  /* This div can be used to control table width/overflow if needed */
+  overflow-x: auto; /* Allows horizontal scrolling on small screens if table is too wide */
+}
+
+/* Style.css */
+
+table {
+  width: 100%; /* Or set a specific max-width like max-width: 800px; */
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+  border: 1px solid black;
+
+  /* --- ADD THESE TWO LINES TO CENTER THE TABLE --- */
+  margin-left: auto;
+  margin-right: auto;
+  /* OR the shorthand: margin: 20px auto; (if 20px is your desired top/bottom margin) */
+}
+
+/* ... (rest of your table and other styles) ... */
+
+th, td {
+  text-align: left; /* Align text to the left */
+  padding: 12px 15px; /* Adjust padding for spacing */
+  /* Remove individual cell borders to achieve the look in the image */
+  /* border: none; */
+}
+
+th {
+  font-weight: normal; /* Headers are usually not bold in modern UIs unless explicitly styled */
+  color: black;
+  font-weight: bold; /* Lighter color for header text */
+  text-transform: uppercase; /* Uppercase headers as seen in some UIs */
+  font-size: 14px;
+  background-color: white;
+  border-bottom: 1px solid #eee; /* Light bottom border for headers */
+}
+
+td {
+  color: #333; /* Darker text for data */
+  border-bottom: 1px solid #eee; /* Light bottom border for data rows */
+}
+
+/* Remove border for the last row to match typical list views */
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Hover effect for rows */
+tr:hover {
+  background-color: #f5f5f5; /* Light grey background on hover */
+  cursor: pointer; /* Indicate it's clickable */
+}
+
+/* Specific column widths if needed, but flexbox or just padding often works */
+/*
+th:nth-child(1), td:nth-child(1) { width: 20%; }
+th:nth-child(2), td:nth-child(2) { width: 60%; }
+th:nth-child(3), td:nth-child(3) { width: 20%; text-align: right; }
+*/
